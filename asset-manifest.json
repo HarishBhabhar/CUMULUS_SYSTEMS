@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CUMULUS_SYSTEMS/static/css/main.d1984aac.css",
+    "main.js": "/CUMULUS_SYSTEMS/static/js/main.1a4e2ce6.js",
+    "static/js/787.db3f688f.chunk.js": "/CUMULUS_SYSTEMS/static/js/787.db3f688f.chunk.js",
+    "index.html": "/CUMULUS_SYSTEMS/index.html",
+    "main.d1984aac.css.map": "/CUMULUS_SYSTEMS/static/css/main.d1984aac.css.map",
+    "main.1a4e2ce6.js.map": "/CUMULUS_SYSTEMS/static/js/main.1a4e2ce6.js.map",
+    "787.db3f688f.chunk.js.map": "/CUMULUS_SYSTEMS/static/js/787.db3f688f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1984aac.css",
+    "static/js/main.1a4e2ce6.js"
+  ]
+}

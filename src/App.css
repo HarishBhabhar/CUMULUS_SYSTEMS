@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  /* padding: 20px; */
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #141414;
+	color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-container {
+  margin: 10px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196F3; */
+  justify-content: space-evenly;
+  margin-top: 50px;
+  /* padding: 10px; */
+  
+}
+.input{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 10px;
+}
+.main{
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 0.8s;
+  width: 25%;
+box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.select{
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 0.8s;
+  width: 22%;
+  border: 2px solid red;
+  margin-left: 4px;
+  position: absolute;
+   
+  /* background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 0.8s;
+  width: 25%;
+box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .2); */
+}
+#imdbRating-filter{
+
+    background: #fff;
+    height: 36px;
+    border-radius: 30px;
+    padding: 0px 4px;
+    transition: 0.8s;
+  margin: 1px 1px 1px;
+
+    width: 20%;
+
+}
+
+.search-container{
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  cursor: pointer;
+  /* transition: 0.8s; */
+  width: 25%;
+box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover > .search-input{
+  width: 400px;
+}
+
+.search-container .search-input{
+  background: transparent;
+  border: none;
+  outline:none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+  color: #5cbdbb;
+}
+
+.search-container:hover{
+animation: hoverShake 0.15s linear 3;
+}
+
+
+.box {
+  width: 330px;
+  margin: 10px;
+  padding: 10px;
+  line-height: 25px;
+  /* float: center; */
+  border-radius: 30px;
+  border: 1px solid #999;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+img{
+  border-radius: 20px;
+  margin: 0px;
+  width: 318px;
+}
+.clearboth {
+  clear: both;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 7px;
+  right: 1px;
+  font-size: 41px;
+  background: rgb(121, 120, 118);
   color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.back-to-top:hover {
+  background: rgb(82, 80, 80);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  width: 90px;
+  height: 30px;
+  
 }
